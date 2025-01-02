@@ -1,0 +1,19 @@
+name: art_sweetalert_new
+description: "A beautiful, responsive, customizable, accessible replacement, easy use for flutter popup boxes. Both supported ios and android."
+version: 1.0.0
+homepage:
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
