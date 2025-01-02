@@ -1,6 +1,9 @@
 # Changelog
 
-## [1.0.1] - 2024-01-02
+## [1.0.2] - 2024-01-02
+- Enhance ArtAlertButton style
+
+- ## [1.0.1] - 2024-01-02
 - Add attribute canPop to prevent back button action
 
 ## [1.0.0] - 2024-01-02
