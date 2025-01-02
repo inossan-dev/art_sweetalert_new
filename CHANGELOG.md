@@ -4,6 +4,9 @@
 - Add attribute canPop to prevent back button action
 
 ## [1.0.0] - 2024-01-02
+- Add attribute canPop to prevent back button action
+
+## [1.0.0] - 2024-01-02
 
 ### Major Additions
 - New animation system with smooth transitions for alert appearance and dismissal
