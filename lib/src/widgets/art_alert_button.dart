@@ -7,6 +7,7 @@ class ArtAlertButton extends StatelessWidget {
   final Color textColor;
   final EdgeInsetsGeometry padding;
   final double elevation;
+  final double borderRadius;
 
   const ArtAlertButton({
     super.key,
@@ -16,6 +17,7 @@ class ArtAlertButton extends StatelessWidget {
     this.textColor = Colors.white,
     this.padding = const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
     this.elevation = 0,
+    this.borderRadius = 8,
   });
 
   @override
@@ -28,7 +30,7 @@ class ArtAlertButton extends StatelessWidget {
         padding: padding,
         elevation: elevation,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8),
+          borderRadius: BorderRadius.circular(borderRadius),
         ),
       ),
       child: child,

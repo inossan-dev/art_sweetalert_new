@@ -44,6 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ArtAlertButton(
           child: const Text('OK'),
           onPressed: () => Navigator.of(context).pop(),
+          borderRadius: 50,
         ),
       ],
     );
