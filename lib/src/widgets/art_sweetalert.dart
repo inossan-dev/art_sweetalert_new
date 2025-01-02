@@ -10,6 +10,7 @@ class ArtSweetAlert extends StatelessWidget {
   final double iconSize;
   final Duration animationDuration;
   final bool barrierDismissible;
+  final bool canPop;
   final Color backgroundColor;
   final double borderRadius;
 
@@ -22,6 +23,7 @@ class ArtSweetAlert extends StatelessWidget {
     this.padding = const EdgeInsets.all(24),
     this.iconSize = 80,
     this.animationDuration = const Duration(milliseconds: 600),
+    this.canPop = true,
     this.barrierDismissible = true,
     this.backgroundColor = Colors.white,
     this.borderRadius = 8,
@@ -34,6 +36,7 @@ class ArtSweetAlert extends StatelessWidget {
     ArtAlertType? type,
     List<Widget>? actions,
     bool? barrierDismissible,
+    bool? canPop,
     double? iconSize,
     Color? backgroundColor,
     double? borderRadius,
@@ -46,15 +49,18 @@ class ArtSweetAlert extends StatelessWidget {
       barrierColor: Colors.black54,
       transitionDuration: animationDuration ?? const Duration(milliseconds: 400),
       pageBuilder: (context, animation, secondaryAnimation) {
-        return ArtSweetAlert(
-          title: title,
-          content: content,
-          type: type,
-          actions: actions,
-          iconSize: iconSize ?? 80,
-          backgroundColor: backgroundColor ?? Colors.white,
-          borderRadius: borderRadius ?? 8,
-          animationDuration: animationDuration ?? const Duration(milliseconds: 400),
+        return PopScope(
+          canPop: canPop ?? true,
+          child: ArtSweetAlert(
+            title: title,
+            content: content,
+            type: type,
+            actions: actions,
+            iconSize: iconSize ?? 80,
+            backgroundColor: backgroundColor ?? Colors.white,
+            borderRadius: borderRadius ?? 8,
+            animationDuration: animationDuration ?? const Duration(milliseconds: 400),
+          ),
         );
       },
       transitionBuilder: (context, animation, secondaryAnimation, child) {
