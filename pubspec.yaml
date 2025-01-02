@@ -1,6 +1,6 @@
 name: art_sweetalert_new
 description: "A beautiful, responsive, customizable, accessible replacement, easy use for flutter popup boxes. Both supported ios and android."
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/inossan-dev/art_sweetalert_new
 
 environment:

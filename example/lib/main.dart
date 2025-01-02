@@ -37,7 +37,8 @@ class _MyHomePageState extends State<MyHomePage> {
       context: context,
       title: const Text('Hello'),
       content: const Text('Ceci est un message simple'),
-      type: ArtAlertType.warning,
+      canPop: false,
+      type: ArtAlertType.info,
       barrierDismissible: false,
       actions: [
         ArtAlertButton(
